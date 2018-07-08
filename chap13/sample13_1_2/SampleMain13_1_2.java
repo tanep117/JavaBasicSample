@@ -24,7 +24,7 @@ public class SampleMain13_1_2 {
 			player = wizard;
 		}
 
-		
+
 		//攻撃技を設定する。
 		int aNum = inputAttack(sc);
 		Attack attack;
@@ -44,8 +44,8 @@ public class SampleMain13_1_2 {
 		default:
 			attack = null;
 		}
-		
-		
+
+
 		//攻撃をする
 		System.out.println("-----------------");
 		player.setAttack(attack);
@@ -79,10 +79,10 @@ public class SampleMain13_1_2 {
 			if(num>=1 && num<=4) {
 				return num;
 			}
-			return inputPlayer(sc);
+			return inputAttack(sc);
 		} catch (NumberFormatException e) {
 			System.out.println("数値を入力して下さい。");
-			return inputPlayer(sc);
+			return inputAttack(sc);
 		}
 	}
 }

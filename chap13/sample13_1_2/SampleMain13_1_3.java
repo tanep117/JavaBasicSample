@@ -13,7 +13,7 @@ public class SampleMain13_1_3 {
 		//戦士と魔法使いのインスタンス化
 		Fighter fighter = new Fighter();
 		Wizard wizard = new Wizard();
-		
+
 		//攻撃技のインスタンス化
 		SwordAttack swordAttack = new SwordAttack();
 		Poison poison = new Poison();
@@ -22,11 +22,11 @@ public class SampleMain13_1_3 {
 
 		//プレーヤーを選択する。
 		int pNum = inputPlayer(sc);
-		
+
 		//攻撃技を選択する。
 		int aNum = inputAttack(sc);
-		
-		
+
+
 		//攻撃をする
 		System.out.println("-----------------");
 		if(pNum==1) {
@@ -99,10 +99,10 @@ public class SampleMain13_1_3 {
 			if(num>=1 && num<=4) {
 				return num;
 			}
-			return inputPlayer(sc);
+			return inputAttack(sc);
 		} catch (NumberFormatException e) {
 			System.out.println("数値を入力して下さい。");
-			return inputPlayer(sc);
+			return inputAttack(sc);
 		}
 	}
 }
